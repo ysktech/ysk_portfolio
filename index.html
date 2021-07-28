@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!-- タイピングアニメ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-pc">
+            <div class="inner">
+                <div class="pc-header-left">
+                    <h1>YUSUKE K</h1>
+                </div>
+                <div class="pc-header-right">
+                    <nav>
+                        <ul>
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#message">MESSAGE</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header-smafo">
+            <div class="header-left">
+                <h1>YUSUKE K</h1>
+            </div>
+            <div class="header-right">
+                <input id ="ham" type="checkbox">
+                <label for="ham" class="hamburger"><div class="line-bar"></div><div class="line-bar"></div><div class="line-bar"></div></label>
+                <label for="ham" class="back"></label>
+                <div id="content">
+                    <ul>
+                        <label for="ham" class="close">×</label>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#message">MESSAGE</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- maivisual(home) -->
+    <section class="mainvisual" id="home">
+        <div class="typing">
+            <div class="typed-wrap">
+                <h1><span class="typed1"></span></h1>
+                <h2><span class="typed2"></span></h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- typed anime -->
+    <script>
+        $(function() {
+            $(".typed1").typed({
+                strings: ["Welcome to my portfolio."],
+                typeSpeed: 100,
+                startDeley: 1000
+            });
+        });
+    </script>
+
+    <section class="message" id="message">
+        <div class="inner effect-fade">
+            <h2>MESSAGE</h2>
+            <div class="line"></div>
+            <img src="images/jibun.jpeg">
+            <p>
+                はじめまして、YUSUKEと申します。<br>
+                web制作のフロントエンジニア目指して独学で勉強中です。<br>
+                このHPでは、私が作成した成果物を残しています。
+            </p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="inner effect-fade">
+            <h2>ABOUT</h2>
+            <div class="line"></div>
+            <h3 class="human"><i class="fas fa-user-circle icon"></i>YUSUKE KOSHIBA</h3>
+            <ul>
+                <li><i class="fas fa-check-square"></i>未経験からWebエンジニアを目指す</li>
+                <li><i class="fas fa-check-square"></i>27歳</li>
+                <li><i class="fas fa-check-square"></i>神奈川県在住</li>
+            </ul>
+            <h3 class="skill"><i class="fas fa-pen icon"></i>Skill</h3>
+            <ul>
+                <li><i class="fab fa-html5"></i>HTML</li>
+                <li><i class="fab fa-css3-alt"></i>CSS</li>
+                <li><i class="fab fa-sass"></i>Sass</li>
+                <li><i class="fab fa-js"></i>JQuery</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="portfolio effect-fade" id="portfolio">
+        <div class="inner">
+            <h2>Portfolio</h2>
+            <div class="line"></div>
+            <div class="portfolio_box">
+                <div class="portcard_wrap">
+                    <div class="portcard">
+                        <a href="images/cafeサイトresponsive.png"><img src="images/cafeサイト_card.jpg"></a>
+                        <a href="images/cafeサイトresponsive.png">カフェサイト</a>
+                    </div>
+                    <div class="portcard">
+                        <a href="images/アパレルEC responsive.png"><img src="images/アパレルEC_card.jpg" alt="アパレルECサイト"></a>
+                        <a href="images/アパレルEC responsive.png">アパレルEC</a>
+                    </div>
+                    <div class="portcard">
+                        <a href="images/株式会社Microscope_responsive.png"><img src="images/株式会社Microscope_card.jpg"></a>
+                        <a href="images/株式会社Microscope_responsive.png">バイオ燃料会社</a>
+                    </div>
+                </div>
+                <p>※ポートフォリオは模写練習して、所々でオリジナルを加えて作成したものです。</p>
+                <p>※新しい制作物も随時更新予定です。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact effect-fade" id="contact">
+        <div class="inner">
+            <h2>CONTACT</h2>
+            <div class="line"></div>
+            <h3><i class="fas fa-envelope"></i>ksbysk3182@gmail.com</h3>
+            <h3><i class="fas fa-phone"></i>090-1234-5678</h3>
+        </div>
+    </section>
+
+    <footer>
+        <p><small>ⓒ YUSUKE KOSHIBA 2021</small></p>
+    </footer>
+</body>
+</html>
